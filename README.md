@@ -1,6 +1,6 @@
 # Set filters library
 
-This repository contains Java implementations of a collection set filter data structures.
+This repository contains implementations of a collection set filter data structures.
 
 ## Disclaimer
 
