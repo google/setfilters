@@ -1,0 +1,29 @@
+name: 'Bazel build'
+description: 'Baze build actions'
+
+runs:
+  using: "composite"
+  steps:
+    - name: 'Install Java ${{ env.USE_JAVA_VERSION }}'
+      uses: actions/setup-java@v2
+      with:
+        distribution: '${{ env.USE_JAVA_DISTRIBUTION }}'
+        java-version: '${{ env.USE_JAVA_VERSION }}'
+    - name: 'Check out repository'
+      uses: actions/checkout@v2
+    - name: 'Cache Bazel files'
+      uses: actions/cache@v2
+      with:
+        path: ~/.cache/bazel
+        key: ${{ runner.os }}-bazel-build-${{ github.sha }}
+        restore-keys: |
+          ${{ runner.os }}-bazel-build-
+    - name: 'Java build'
+      run: bazel build //java/...
+      shell: bash
+    - name: 'Clean bazel cache'
+      run: |
+        rm -rf $(bazel info repository_cache)
+        rm -rf ~/.cache/bazel/*/*/external/
+      shell: bash
+      
