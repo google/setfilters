@@ -20,3 +20,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: ./.github/actions/bazel-build
+  bazel-test:
+    name: 'Bazel test'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/bazel-test
