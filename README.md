@@ -2,6 +2,6 @@
 
 This repository contains implementations of a collection set filter data structures.
 
-## Disclaimer
+## Note
 
 This is not an officially supported Google product.
