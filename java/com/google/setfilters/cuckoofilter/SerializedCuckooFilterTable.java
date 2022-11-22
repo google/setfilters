@@ -17,7 +17,7 @@ package com.google.setfilters.cuckoofilter;
 import java.util.Arrays;
 
 /** Serialization of {@link CuckooFilterTable}. */
-final class SerializedCuckooFilterTable {
+public final class SerializedCuckooFilterTable {
   private final byte[] rawSerialization;
 
   /** Creates serialization from raw byte array. */
