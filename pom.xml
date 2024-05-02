@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.google.setfilters</groupId>
+  <artifactId>setfilters-parent</artifactId>
+  <version>HEAD-jre-SNAPSHOT</version>
+  <packaging>pom</packaging>
+  <url>https://github.com/google/setfilters</url>
+
+  <name>Setfilters Main Parent</name>
+
+  <properties>
+    <errorprone.version>2.26.1</errorprone.version>
+    <guava.version>31.0.1-jre</guava.version>
+    <truth.version>1.1</truth.version>
+    <javac.version>9+181-r4173-1</javac.version>
+  </properties>
+
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <modules>
+    <module>setfilters</module>
+    <module>setfilters-tests</module>
+  </modules>
+
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <testSourceDirectory>test</testSourceDirectory>
+    <resources>
+      <resource>
+        <directory>..</directory>
+        <includes>
+          <include>LICENSE</include>
+        </includes>
+        <targetPath>META-INF</targetPath>
+      </resource>
+    </resources>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.1</version>
+          <configuration>
+            <source>1.8</source>
+            <target>1.8</target>
+            <encoding>UTF-8</encoding>
+            <parameters>true</parameters>
+            <compilerArgs>
+              <arg>-sourcepath</arg>
+              <arg>doesnotexist</arg>
+              <!-- https://errorprone.info/docs/installation#maven -->
+              <arg>-XDcompilePolicy=simple</arg>
+              <!-- -Xplugin:ErrorProne is set conditionally by a profile. -->
+            </compilerArgs>
+            <annotationProcessorPaths>
+              <path>
+                <groupId>com.google.errorprone</groupId>
+                <artifactId>error_prone_core</artifactId>
+                <version>2.23.0</version>
+              </path>
+            </annotationProcessorPaths>
+            <fork>true</fork>
+          </configuration>
+        </plugin>
+        <plugin>
+          <artifactId>maven-jar-plugin</artifactId>
+          <version>3.2.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.3.0</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <goals>
+                <goal>jar-no-fork</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.5.0</version>
+          <configuration>
+            <quiet>true</quiet>
+            <notimestamp>true</notimestamp>
+            <encoding>UTF-8</encoding>
+            <docencoding>UTF-8</docencoding>
+            <charset>UTF-8</charset>
+            <additionalOptions>
+              <additionalOption>-XDignore.symbol.file</additionalOption>
+              <additionalOption>-Xdoclint:-html</additionalOption>
+            </additionalOptions>
+            <linksource>true</linksource>
+            <source>${java.specification.version}</source>
+            <additionalJOption>${maven-javadoc-plugin.additionalJOptions}</additionalJOption>
+          </configuration>
+          <executions>
+            <execution>
+              <id>attach-docs</id>
+              <goals><goal>jar</goal></goals>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <artifactId>maven-dependency-plugin</artifactId>
+          <version>3.1.1</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+
+  <dependencyManagement>
+    <dependencies>
+      <dependency>
+        <groupId>com.google.errorprone</groupId>
+        <artifactId>error_prone_annotations</artifactId>
+        <version>${errorprone.version}</version>
+      </dependency>
+      <dependency>
+        <groupId>com.google.guava</groupId>
+        <artifactId>guava</artifactId>
+        <version>${guava.version}</version>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+</project>
