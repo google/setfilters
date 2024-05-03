@@ -19,7 +19,7 @@ runs:
         restore-keys: |
           ${{ runner.os }}-bazel-test-
     - name: 'Java test'
-      run: bazel test //setfilter-tests/...
+      run: bazel test //setfilters-tests/...
       shell: bash
     - name: 'Clean bazel cache'
       run: |
