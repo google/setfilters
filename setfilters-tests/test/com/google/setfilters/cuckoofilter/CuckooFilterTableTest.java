@@ -19,7 +19,7 @@ import static com.google.common.truth.Truth8.assertThat;
 import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
-import static org.mockito.MockSettings.withSettings;
+import static org.mockito.Mockito.withSettings;
 
 import java.util.Arrays;
 import java.util.List;
