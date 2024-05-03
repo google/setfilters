@@ -121,10 +121,10 @@ java_test(
 	    "SerializedCuckooFilterTableTest.java",
     ],
     deps = [
-	    "//third_party/java/guava",
-	    "//third_party/java/junit",
-	    "//third_party/java/truth",
-	    "//third_party/java/mockito",
-	    "//java/com/google/setfilters/cuckoofilter",
+        "//third_party/java/guava",
+        "//third_party/java/junit",
+        "//third_party/java/truth",
+        "//third_party/java/mockito",
+        "//java/com/google/setfilters/cuckoofilter",
     ]
 )
