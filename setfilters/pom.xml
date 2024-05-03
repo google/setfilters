@@ -5,7 +5,7 @@
   <parent>
     <groupId>com.google.setfilters</groupId>
     <artifactId>setfilters-parent</artifactId>
-    <version>HEAD-jre-SNAPSHOT</version>
+    <version>1.0.0</version>
   </parent>
 
   <artifactId>setfilters</artifactId>
