@@ -18,6 +18,7 @@ package(default_visibility = ["//visibility:public"])
 
 java_test(
     name = "CuckooFilterArrayTest",
+    test_class = "CuckooFilterArrayTest",
     srcs = [
     	"CuckooFilterArrayTest.java",
     ],
@@ -32,6 +33,7 @@ java_test(
 
 java_test(
     name = "CuckooFilterTest",
+    test_class = "CuckooFilterTest",
     srcs = [
     	"CuckooFilterTest.java",
     ],
@@ -62,6 +64,7 @@ java_test(
 
 java_test(
     name = "CuckooFilterHashFunctionsTest",
+    test_class = "CuckooFilterHashFunctionsTest",
     srcs = [
     	"CuckooFilterHashFunctionsTest.java",
     ],
@@ -76,6 +79,7 @@ java_test(
 
 java_test(
     name = "CuckooFilterStrategiesTest",
+    test_class = "CuckooFilterStrategiesTest",
     srcs = [
     	"CuckooFilterStrategiesTest.java",
     ],
@@ -90,6 +94,7 @@ java_test(
 
 java_test(
     name = "CuckooFilterTableTest",
+    test_class = "CuckooFilterTableTest",
     srcs = [
     	"CuckooFilterTableTest.java",
     ],
@@ -104,6 +109,7 @@ java_test(
 
 java_test(
     name = "SemiSortedCuckooFilterTableTest",
+    test_class = "SemiSortedCuckooFilterTableTest",
     srcs = [
         "SemiSortedCuckooFilterTableTest.java",
     ],
@@ -118,6 +124,7 @@ java_test(
 
 java_test(
     name = "SerializedCuckooFilterTableTest",
+    test_class = "SerializedCuckooFilterTableTest",
     srcs = [
         "SerializedCuckooFilterTableTest.java",
     ],
