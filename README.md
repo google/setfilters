@@ -1,8 +1,8 @@
 [![Build Status](https://github.com/google/setfilters/workflows/CI/badge.svg?branch=master)](https://github.com/google/setfilters/actions)
 
-# Set filters library
+# Set Filters Library
 
-This repository contains implementations of a collection set filter data structures.
+This repository contains implementations of a collection set filter data structures. 
 
 ## Note
 
