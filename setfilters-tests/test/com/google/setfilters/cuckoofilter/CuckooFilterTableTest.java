@@ -19,6 +19,7 @@ import static com.google.common.truth.Truth8.assertThat;
 import static org.junit.Assert.assertThrows;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
+import static org.mockito.MockSettings.withSettings;
 
 import java.util.Arrays;
 import java.util.List;
@@ -73,7 +74,7 @@ public final class CuckooFilterTableTest {
 
   @Before
   public void setUp() {
-    random = mock(Random.class);
+    random = mock(Random.class, withSettings().withoutAnnotations());
     table =
         tableFactory.create(
             CuckooFilterConfig.Size.newBuilder()
