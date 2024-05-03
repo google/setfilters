@@ -32,73 +32,73 @@ java_test(
 
 java_test(
 	name = "CuckooFilterTest",
-	srcs = [
-		"CuckooFilterTest.java",
-	],
-	size = "medium",
-	deps = [
-		"//third_party/java/guava",
-		"//third_party/java/junit",
-		"//third_party/java/truth",
-		"//third_party/java/mockito",
-		"//java/com/google/setfilters/cuckoofilter",
-	]
+    srcs = [
+    	"CuckooFilterTest.java",
+    ],
+    size = "medium",
+    deps = [
+    	"//third_party/java/guava",
+    	"//third_party/java/junit",
+    	"//third_party/java/truth",
+    	"//third_party/java/mockito",
+    	"//java/com/google/setfilters/cuckoofilter",
+    ]
 )
 
 java_test(
-	name = "CuckooFilterConfigTest",
-	srcs = [
-		"CuckooFilterConfigTest.java",
-	],
-	deps = [
-		"//third_party/java/guava",
-		"//third_party/java/junit",
-		"//third_party/java/truth",
-		"//third_party/java/mockito",
-		"//java/com/google/setfilters/cuckoofilter",
-	]
+    name = "CuckooFilterConfigTest",
+    srcs = [
+    	"CuckooFilterConfigTest.java",
+    ],
+    deps = [
+    	"//third_party/java/guava",
+    	"//third_party/java/junit",
+    	"//third_party/java/truth",
+    	"//third_party/java/mockito",
+    	"//java/com/google/setfilters/cuckoofilter",
+    ]
 )
 
 java_test(
-	name = "CuckooFilterHashFunctionsTest",
-	srcs = [
-		"CuckooFilterHashFunctionsTest.java",
-	],
-	deps = [
-		"//third_party/java/guava",
-		"//third_party/java/junit",
-		"//third_party/java/truth",
-		"//third_party/java/mockito",
-		"//java/com/google/setfilters/cuckoofilter",
-	]
+    name = "CuckooFilterHashFunctionsTest",
+    srcs = [
+    	"CuckooFilterHashFunctionsTest.java",
+    ],
+    deps = [
+    	"//third_party/java/guava",
+    	"//third_party/java/junit",
+    	"//third_party/java/truth",
+    	"//third_party/java/mockito",
+    	"//java/com/google/setfilters/cuckoofilter",
+    ]
 )
 
 java_test(
-	name = "CuckooFilterStrategiesTest",
-	srcs = [
-		"CuckooFilterStrategiesTest.java",
-	],
-	deps = [
-		"//third_party/java/guava",
-		"//third_party/java/junit",
-		"//third_party/java/truth",
-		"//third_party/java/mockito",
-		"//java/com/google/setfilters/cuckoofilter",
-	]
+    name = "CuckooFilterStrategiesTest",
+    srcs = [
+    	"CuckooFilterStrategiesTest.java",
+    ],
+    deps = [
+    	"//third_party/java/guava",
+    	"//third_party/java/junit",
+    	"//third_party/java/truth",
+    	"//third_party/java/mockito",
+    	"//java/com/google/setfilters/cuckoofilter",
+    ]
 )
 
 java_test(
-	name = "CuckooFilterTableTest",
-	srcs = [
-		"CuckooFilterTableTest.java",
-	],
-	deps = [
-		"//third_party/java/guava",
-		"//third_party/java/junit",
-		"//third_party/java/truth",
-		"//third_party/java/mockito",
-		"//java/com/google/setfilters/cuckoofilter",
-	]
+    name = "CuckooFilterTableTest",
+    srcs = [
+    	"CuckooFilterTableTest.java",
+    ],
+    deps = [
+    	"//third_party/java/guava",
+    	"//third_party/java/junit",
+    	"//third_party/java/truth",
+    	"//third_party/java/mockito",
+    	"//java/com/google/setfilters/cuckoofilter",
+    ]
 )
 
 java_test(
