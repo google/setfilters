@@ -26,7 +26,7 @@ java_test(
     	"//third_party/java/junit",
     	"//third_party/java/truth",
     	"//third_party/java/mockito",
-    	"//java/com/google/setfilters/cuckoofilter",
+    	"//setfilters/src/com/google/setfilters/cuckoofilter",
     ]
 )
 
@@ -41,7 +41,7 @@ java_test(
     	"//third_party/java/junit",
     	"//third_party/java/truth",
     	"//third_party/java/mockito",
-    	"//java/com/google/setfilters/cuckoofilter",
+    	"//setfilters/src/com/google/setfilters/cuckoofilter",
     ]
 )
 
@@ -55,7 +55,7 @@ java_test(
     	"//third_party/java/junit",
     	"//third_party/java/truth",
     	"//third_party/java/mockito",
-    	"//java/com/google/setfilters/cuckoofilter",
+    	"//setfilters/src/com/google/setfilters/cuckoofilter",
     ]
 )
 
@@ -69,7 +69,7 @@ java_test(
     	"//third_party/java/junit",
     	"//third_party/java/truth",
     	"//third_party/java/mockito",
-    	"//java/com/google/setfilters/cuckoofilter",
+    	"//setfilters/src/com/google/setfilters/cuckoofilter",
     ]
 )
 
@@ -83,7 +83,7 @@ java_test(
     	"//third_party/java/junit",
     	"//third_party/java/truth",
     	"//third_party/java/mockito",
-    	"//java/com/google/setfilters/cuckoofilter",
+    	"//setfilters/src/com/google/setfilters/cuckoofilter",
     ]
 )
 
@@ -97,7 +97,7 @@ java_test(
     	"//third_party/java/junit",
     	"//third_party/java/truth",
     	"//third_party/java/mockito",
-    	"//java/com/google/setfilters/cuckoofilter",
+    	"//setfilters/src/com/google/setfilters/cuckoofilter",
     ]
 )
 
@@ -111,7 +111,7 @@ java_test(
         "//third_party/java/junit",
         "//third_party/java/truth",
         "//third_party/java/mockito",
-        "//java/com/google/setfilters/cuckoofilter",
+        "//setfilters/src/com/google/setfilters/cuckoofilter",
     ]
 )
 
@@ -125,6 +125,6 @@ java_test(
         "//third_party/java/junit",
         "//third_party/java/truth",
         "//third_party/java/mockito",
-        "//java/com/google/setfilters/cuckoofilter",
+        "//setfilters/src/com/google/setfilters/cuckoofilter",
     ]
 )
