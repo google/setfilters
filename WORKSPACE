@@ -1,4 +1,4 @@
-# Copyright 2022 Google LLC
+# Copyright 2024 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -27,9 +27,9 @@ http_archive(
 
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 
-GUAVA_VERSION = "27.1"
+GUAVA_VERSION = "32.0.0-jre"
 
-ERROR_PRONE_VERSION = "2.14.0"
+ERROR_PRONE_VERSION = "2.26.1"
 
 maven_install(
     artifacts = [
@@ -38,7 +38,7 @@ maven_install(
         "com.google.truth:truth:1.1",
         "com.google.truth.extensions:truth-java8-extension:1.1.3",
         "junit:junit:4.13",
-        "org.mockito:mockito-core:2.28.2",
+        "org.mockito:mockito-core:4.11.0",
     ],
     repositories = [
         "https://repo1.maven.org/maven2",
