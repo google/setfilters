@@ -17,17 +17,17 @@ load("@rules_java//java:defs.bzl", "java_test")
 package(default_visibility = ["//visibility:public"])
 
 java_test(
-	name = "CuckooFilterArrayTest",
-	srcs = [
-		"CuckooFilterArrayTest.java",
-	],
-	deps = [
-		"//third_party/java/guava",
-		"//third_party/java/junit",
-		"//third_party/java/truth",
-		"//third_party/java/mockito",
-		"//java/com/google/setfilters/cuckoofilter",
-	]
+    name = "CuckooFilterArrayTest",
+    srcs = [
+    	"CuckooFilterArrayTest.java",
+    ],
+    deps = [
+    	"//third_party/java/guava",
+    	"//third_party/java/junit",
+    	"//third_party/java/truth",
+    	"//third_party/java/mockito",
+    	"//java/com/google/setfilters/cuckoofilter",
+    ]
 )
 
 java_test(
