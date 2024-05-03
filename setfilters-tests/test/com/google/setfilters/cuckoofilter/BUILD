@@ -118,7 +118,7 @@ java_test(
 java_test(
     name = "SerializedCuckooFilterTableTest",
     srcs = [
-	    "SerializedCuckooFilterTableTest.java",
+        "SerializedCuckooFilterTableTest.java",
     ],
     deps = [
         "//third_party/java/guava",
