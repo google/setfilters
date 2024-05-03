@@ -102,29 +102,29 @@ java_test(
 )
 
 java_test(
-	name = "SemiSortedCuckooFilterTableTest",
-	srcs = [
-		"SemiSortedCuckooFilterTableTest.java",
-	],
-	deps = [
-		"//third_party/java/guava",
-		"//third_party/java/junit",
-		"//third_party/java/truth",
-		"//third_party/java/mockito",
-		"//java/com/google/setfilters/cuckoofilter",
-	]
+    name = "SemiSortedCuckooFilterTableTest",
+    srcs = [
+        "SemiSortedCuckooFilterTableTest.java",
+    ],
+    deps = [
+        "//third_party/java/guava",
+        "//third_party/java/junit",
+        "//third_party/java/truth",
+        "//third_party/java/mockito",
+        "//java/com/google/setfilters/cuckoofilter",
+    ]
 )
 
 java_test(
-	name = "SerializedCuckooFilterTableTest",
-	srcs = [
-		"SerializedCuckooFilterTableTest.java",
-	],
-	deps = [
-		"//third_party/java/guava",
-		"//third_party/java/junit",
-		"//third_party/java/truth",
-		"//third_party/java/mockito",
-		"//java/com/google/setfilters/cuckoofilter",
-	]
+    name = "SerializedCuckooFilterTableTest",
+    srcs = [
+	    "SerializedCuckooFilterTableTest.java",
+    ],
+    deps = [
+	    "//third_party/java/guava",
+	    "//third_party/java/junit",
+	    "//third_party/java/truth",
+	    "//third_party/java/mockito",
+	    "//java/com/google/setfilters/cuckoofilter",
+    ]
 )
