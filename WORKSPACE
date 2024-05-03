@@ -27,7 +27,7 @@ http_archive(
 
 load("@rules_jvm_external//:defs.bzl", "maven_install")
 
-GUAVA_VERSION = "32.0.0-jre"
+GUAVA_VERSION = "32.0.0"
 
 ERROR_PRONE_VERSION = "2.26.1"
 
