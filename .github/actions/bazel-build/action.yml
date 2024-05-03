@@ -19,7 +19,7 @@ runs:
         restore-keys: |
           ${{ runner.os }}-bazel-build-
     - name: 'Java build'
-      run: bazel build //java/...
+      run: bazel build //setfilters/...
       shell: bash
     - name: 'Clean bazel cache'
       run: |
