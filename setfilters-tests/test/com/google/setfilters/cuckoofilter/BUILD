@@ -31,7 +31,7 @@ java_test(
 )
 
 java_test(
-	name = "CuckooFilterTest",
+    name = "CuckooFilterTest",
     srcs = [
     	"CuckooFilterTest.java",
     ],
@@ -47,6 +47,7 @@ java_test(
 
 java_test(
     name = "CuckooFilterConfigTest",
+    test_class = "CuckooFilterConfigTest",
     srcs = [
     	"CuckooFilterConfigTest.java",
     ],
