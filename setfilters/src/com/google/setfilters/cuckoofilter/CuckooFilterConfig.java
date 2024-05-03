@@ -162,7 +162,7 @@ public final class CuckooFilterConfig {
      * probability) with the given {@code targetFalsePositiveRate}.
      *
      * @throws IllegalArgumentException if {@code targetFalsePositiveRate} is not in range [0, 1] or
-     *     {@code elementsCountUpperBound} is <= 0, or a suitable cuckoo filter size could not be
+     *     {@code elementsCountUpperBound} is &lt;= 0, or a suitable cuckoo filter size could not be
      *     computed based on the given input.
      */
     public static Size computeEfficientSize(
@@ -245,7 +245,7 @@ public final class CuckooFilterConfig {
       /**
        * Sets the number of buckets in the cuckoo filter.
        *
-       * <p>{@code bucketCount} must be > 0.
+       * <p>{@code bucketCount} must be &gt; 0.
        */
       @CanIgnoreReturnValue
       public Builder setBucketCount(int bucketCount) {

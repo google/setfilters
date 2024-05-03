@@ -24,7 +24,7 @@ public enum CuckooFilterStrategies implements CuckooFilterConfig.Strategy {
    * A strategy that uses a mod operator to produce the desired outputs.
    *
    * <p>The {@link HashCode} generated with the hash function should be at least 64 bits. This will
-   * achieve good false positive rate when fingerprintLength <= 32.
+   * achieve good false positive rate when fingerprintLength &lt;= 32.
    */
   SIMPLE_MOD() {
     @Override
