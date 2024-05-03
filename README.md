@@ -2,7 +2,7 @@
 
 # Set Filters Library
 
-This repository contains implementations of a collection set filter data structures. 
+This repository contains implementations of a collection of approximate membership query data structures.
 
 ## Note
 
