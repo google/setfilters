@@ -1,8 +1,20 @@
 [![Build Status](https://github.com/google/setfilters/workflows/CI/badge.svg?branch=master)](https://github.com/google/setfilters/actions)
 
-# Set Filters Library
+# Setfilters Library
 
-This repository contains implementations of a collection of set filter data structures, also commonly referred as approximate membership query data structures. For succinctness, we will usually use the term "set filters" in this repository.
+This repository contains implementations of a collection of set filter data structures, also commonly referred as approximate membership query data structures. For succinctness, we will usually use the pronoun "Setfilters" in this repository.
+
+# Adding Setfilters library to the project
+
+Setfilters' Maven group ID is `com.google.setfilters`, and its artifact id is `setfilters`. To add depency using Maven, simply add the following lines in your `pom.xml` file: 
+
+```xml
+<dependency>
+  <groupId>com.google.setfilters</groupId>
+  <artifactId>setfilters</artifactId>
+  <version>1.0.0</version>
+</dependency>
+```
 
 ## Note
 
