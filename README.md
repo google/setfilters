@@ -6,7 +6,7 @@ This repository contains implementations of a collection of set filter data stru
 
 # Adding Setfilters library to the project
 
-Setfilters' Maven group ID is `com.google.setfilters`, and its artifact id is `setfilters`. To add depency using Maven, simply add the following lines in your `pom.xml` file: 
+Setfilters' Maven group ID is `com.google.setfilters`, and its artifact id is `setfilters`. To add dependency using Maven, simply add the following lines in your project's `pom.xml`: 
 
 ```xml
 <dependency>
