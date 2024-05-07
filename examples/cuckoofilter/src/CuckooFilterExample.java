@@ -7,8 +7,8 @@ import com.google.setfilters.cuckoofilter.CuckooFilterConfig.Size;
 import com.google.setfilters.cuckoofilter.CuckooFilterHashFunctions;
 import com.google.setfilters.cuckoofilter.CuckooFilterStrategies;
 import com.google.setfilters.cuckoofilter.SerializedCuckooFilterTable;
-import java.util.List;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Random;
 
 public class CuckooFilterExample {
@@ -76,6 +76,8 @@ public class CuckooFilterExample {
         + computeFalsePositiveRate(cuckooFilter2, elements, /* numRuns= */100000));
   }
 
+  // Returns whether the given cuckoo filter has false negatives, with original elements
+  // as {@code elements}.
   private static boolean hasFalseNegative(CuckooFilter<Integer> cuckooFilter,
       HashSet<Integer> elements) {
     for (int element : elements) {
@@ -85,6 +87,9 @@ public class CuckooFilterExample {
     }
     return false;
   }
+
+  // Computes an estimated false positive rate of the given cuckoo filter by querying
+  // random non-member elements {@code numRuns} times.
   private static double computeFalsePositiveRate(CuckooFilter<Integer> cuckooFilter,
       HashSet<Integer> elements, int numRuns) {
     Random random = new Random();
