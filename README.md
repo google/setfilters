@@ -4,7 +4,7 @@
 
 This repository contains implementations of a collection of set filter data structures, also commonly referred to as approximate membership query data structures. We will use the pronoun "Setfilters" to refer to the library.
 
-# Adding Setfilters library to the project
+# Adding Setfilters library to your Java project
 
 Setfilters' Maven group ID is `com.google.setfilters`, and its artifact id is `setfilters`. To add dependency using Maven, add the following lines to your project's `pom.xml`: 
 
